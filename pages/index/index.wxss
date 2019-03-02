@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  animation:moveToTop 1s ease 0s 1 both;
 }
 
 .banner>swiper {
@@ -13,6 +14,7 @@
 
 .container>.experience {
   background-color:#f0f0f0;
+  animation:moveToTop 1s ease 0.3s 1 both;
 }
 
 .experience .exp_plate:first-child .title {
@@ -68,12 +70,9 @@
   border: 2px solid #7e86fc;
 }
 
-
-
 .choice {
   background-color: #fff;
-  margin-top: 25rpx;
-  max-width: 100%;
+  animation:moveToTop 1s ease 0.6s 1 both;
 }
 
 .choice_block {
@@ -92,9 +91,10 @@
 .moer {
   margin-left: auto;
   font-size: 0.8em;
-  line-height: 1.6;
+  display: flex;
+  align-items: center
 }
-
+.moer image{width: 13px; margin-left: 5px; margin-right: 0}
 .introduce view:nth-child(2) {
   color: #737373;
   font-size: 0.6em;

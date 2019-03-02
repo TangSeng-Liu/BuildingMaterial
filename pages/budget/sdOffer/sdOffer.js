@@ -42,10 +42,7 @@ Page({
       key: 'hydropower',
       success(res) {
         that.data.hydropowerData = res.data;
-        for (var index in that.data.hydropowerData) {
-          that.data.total += that.data.hydropowerData[index].price;
-        }
-        that.data.total += that.data.sg[0].price;
+        that.count();
         that.setData({
           hs_num: res.data[0].num,
           cl_num: res.data[1].num,
@@ -53,10 +50,11 @@ Page({
         })
       },
       fail(){
-        that.data.hydropowerData[0] = that.data.hs[0];
-        that.data.hydropowerData[1] = that.data.cl[0];
+        //塞入默认值
+        that.data.hydropowerData.push(that.data.hs[0],that.data.cl[0])
         that.data.hydropowerData[0].num = that.data.hs_num;
         that.data.hydropowerData[1].num = that.data.cl_num;
+        that.count();
       }
     });
   },
@@ -65,7 +63,7 @@ Page({
       key: "hydropower",
       data: this.data.hydropowerData,
     });
-    wx.navigateTo({
+    wx.reLaunch({
       url: "../offer/offer"
     });
   },
@@ -77,12 +75,7 @@ Page({
 
   },
   /*计算总价 */
-  menuClick: function(e) {
-    this.setData({
-      hs_num: e.currentTarget.dataset.num
-    });
-    this.data.hydropowerData[0] = this.data.hs[e.currentTarget.dataset.num];
-    this.data.hydropowerData[0].num = this.data.hs_num;
+  count:function(){
     this.data.total = 0;
     for (var index in this.data.hydropowerData) {
       this.data.total += this.data.hydropowerData[index].price;
@@ -92,19 +85,60 @@ Page({
       total: this.data.total
     })
   },
+  /*点选事件*/
+  menuClick: function(e) {
+    this.setData({
+      hs_num: e.currentTarget.dataset.num
+    });
+    this.data.hydropowerData[0] = this.data.hs[e.currentTarget.dataset.num];
+    this.data.hydropowerData[0].num = this.data.hs_num;
+    this.count();
+  },
   clClick: function (e) {
     this.setData({
       cl_num: e.currentTarget.dataset.num
     });
     this.data.hydropowerData[1] = this.data.cl[e.currentTarget.dataset.num];
     this.data.hydropowerData[1].num = this.data.cl_num;
-    this.data.total=0;
-    for (var index in this.data.hydropowerData) {
-      this.data.total += this.data.hydropowerData[index].price;
-    }
-    this.data.total += this.data.sg[0].price;
+    this.count();
+  },
+  /**
+   * 弹窗
+   */
+  showDialogBtn: function (e) {
     this.setData({
-      total: this.data.total
+      showModal: true,
     })
+    var that = this;
+    var query = wx.createSelectorQuery();
+    query.select('.modal-content').boundingClientRect(function (rect) {
+      that.setData({
+        blockHeight: rect.height * 0.2
+      })
+    }).exec();
+  },
+  /**
+   * 弹出框蒙层截断touchmove事件
+   */
+  preventTouchMove: function () {},
+  /**
+   * 隐藏模态对话框
+   */
+  hideModal: function () {
+    this.setData({
+      showModal: false,
+    });
+  },
+  /**
+   * 对话框取消按钮点击事件
+   */
+  onCancel: function () {
+    this.hideModal();
+  },
+  /**
+   * 对话框确认按钮点击事件
+   */
+  onConfirm: function () {
+    this.hideModal();
   },
 })

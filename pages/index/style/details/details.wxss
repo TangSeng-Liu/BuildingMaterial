@@ -13,3 +13,8 @@
 .team>.cont{padding: 25rpx; font-size: .8em}
 .team>.cont>view{ margin-bottom:15px}
 .team .flex{ justify-content: space-between}
+.tag{color: #bcbcbc; align-items: center;}
+.tag .num image{ width: 17px; margin:0 5px;}
+.tag .num{ display: flex; align-items: center; }
+.tag .button{ display: flex; align-items: center; color: #f84056; border: 1px solid #f84056; border-radius: 3px; padding:4px 8px; line-height: 1; font-size: .9em; margin: 0;}
+.tag .button image{ width: 18px; margin:0 7px 0 0;}

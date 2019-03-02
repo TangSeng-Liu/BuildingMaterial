@@ -9,14 +9,14 @@
       <swiper-item>
       
       <view class='team team0'>
-      <view class='trip'>
+      <navigator url='/pages/index/team/enroll/enroll?type=designer' class='trip'>
         <view>
           <view class='title'>设计师培训报名</view>
           <view>本平台提供装修设计师的培训，点击本模块进入报名，成为 一名专业的房屋装修设计师，我们在这里等你。</view>
         </view>
-      </view>
+      </navigator>
         <!--设计师内容区-->
-          <view class='team_block flex-wrp' wx:for="{{designer}}" wx:key="key">
+          <view class='team_block flex-wrp' wx:for="{{designer}}" wx:key="key" style='animation:moveToTop 0.8s ease {{index/2}}s 1 both;'>
             <view class='team_left col'>
               <view>
                 <image src="{{item.headurl}}" mode='widthFix'></image>
@@ -33,17 +33,17 @@
               <navigator url="/pages/case/details/details" open-type="navigate"><image src="{{item.worksurl[1]}}" mode='widthFix'></image></navigator>
             </view>
           </view>
-          <button class='sub_button'>成为平台设计师</button>
+          <navigator url='/pages/index/team/enroll/enroll?type=designer' class='sub_button'>成为平台设计师</navigator>
           </view>
       </swiper-item>
       <swiper-item>
       <view class='team team1'>
-      <view class='trip'>
+      <navigator url='/pages/index/team/enroll/enroll?type=decoration' class='trip'>
         <view>
             <view class='title'>装修师培训报名</view>
             <view>本平台提供装修设计师的培训，点击本模块进入报名，成为 一名专业的房屋装修设计师，我们在这里等你。</view>
           </view>
-        </view>
+        </navigator>
         <!--装修队内容区-->
         <view class='team_block flex-wrp' wx:for="{{workman}}" wx:key="key">
           <view class='team_left col'>
@@ -66,7 +66,7 @@
             </navigator>
           </view>
         </view>
-        <button class='sub_button'>成为平台设计师</button>
+        <navigator url='/pages/index/team/enroll/enroll?type=decoration' class='sub_button'>成为平台设计师</navigator>
         </view>
       </swiper-item>
     </swiper>   

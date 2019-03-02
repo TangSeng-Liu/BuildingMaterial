@@ -4,3 +4,8 @@
 .basic>view.flex{padding:16px 15px;}
 .basic .flex .input{ width: 50%;}
 .basic>.flex{ align-items:center}
+.basic>view{
+  animation-name: bottomIn; /*动画名称*/
+  animation-duration: 1.5s; /*动画持续时间*/
+  animation-delay: 0s; /*延迟时间*/
+}

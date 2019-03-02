@@ -4,3 +4,5 @@
 .basic>view.flex{padding:16px 15px;}
 .basic .flex .input{ width: 50%;}
 .basic>.flex{ align-items:center}
+.basic>view{animation:moveToTop 0.5s ease 0s 1 both;}
+.sub_button{animation:moveToTop 0.5s ease 0.5s 1 both;}

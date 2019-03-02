@@ -12,68 +12,86 @@ Page({
     choice_block: [
       [{
           name: "瓷砖",
-          url: '/images/choice1.png'
+          imgurl: '/images/choice1.png',
+          url: '/pages/budget/furnishings/datum/datum'
+          
         },
         {
           name: "木地板",
-          url: '/images/choice2.png'
+          imgurl: '/images/choice2.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "吊顶",
-          url: '/images/choice3.png'
+          imgurl: '/images/choice3.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "鞋柜",
-          url: '/images/choice4.png'
+          imgurl: '/images/choice4.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "灯具",
-          url: '/images/choice5.png'
+          imgurl: '/images/choice5.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "门窗",
-          url: '/images/choice6.png'
+          imgurl: '/images/choice6.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "窗帘",
-          url: '/images/choice7.png'
+          imgurl: '/images/choice7.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "墙面装饰",
-          url: '/images/choice8.png'
+          imgurl: '/images/choice8.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
       ],
       [{
-          name: "瓷砖",
-          url: '/images/choice1.png'
-        },
+        name: "瓷砖",
+        imgurl: '/images/choice1.png',
+        url: '/pages/budget/furnishings/datum/datum'
+
+      },
         {
           name: "木地板",
-          url: '/images/choice2.png'
+          imgurl: '/images/choice2.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "吊顶",
-          url: '/images/choice3.png'
+          imgurl: '/images/choice3.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "鞋柜",
-          url: '/images/choice4.png'
+          imgurl: '/images/choice4.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "灯具",
-          url: '/images/choice5.png'
+          imgurl: '/images/choice5.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "门窗",
-          url: '/images/choice6.png'
+          imgurl: '/images/choice6.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "窗帘",
-          url: '/images/choice7.png'
+          imgurl: '/images/choice7.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
         {
           name: "墙面装饰",
-          url: '/images/choice8.png'
+          imgurl: '/images/choice8.png',
+          url: '/pages/budget/furnishings/datum/datum'
         },
       ],
     ],

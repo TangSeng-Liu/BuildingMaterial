@@ -1,4 +1,4 @@
-<form bindsubmit="formSubmit" bindreset="formReset">
+<form bindsubmit="submitForm" bindreset="formReset" >
 <view class="container">
 <!-- 基本信息 -->
   <view>
@@ -6,15 +6,15 @@
     <view class='basic'>
       <view class=' flex-wrp'>
         <text space="ensp">姓    名:</text>
-        <view class='input'><input type='text' placeholder="请填写您的姓名"></input></view>
+        <view class='input'><input name="name" type='text'  placeholder="请填写您的姓名"></input></view>
       </view>
       <view class='flex-wrp'>
         <text space="ensp">联系电话:</text>
-        <view class='input'><input type='text' placeholder="请填写您的电话，用于接收效果图"></input></view>
+        <view class='input'><input name="tel" type='text'  placeholder="请填写您的电话，用于接收效果图"></input></view>
       </view>
       <view class='flex-wrp'>
         <text space="ensp">小区地址:</text>
-        <view class='input'><input type='text' placeholder="请填写详细地址，便于查询户型图"></input></view>
+        <view class='input'><input name="address" type='text' placeholder="请填写详细地址，便于查询户型图"></input></view>
       </view>
       <view class='flex kuai'>
         <view>小区名称</view>
@@ -32,11 +32,11 @@
          <view class="tips {{tempFilePaths.length>0?'hide':'show'}}">* 只要您上传户型图，我们即刻   为您设计3D效果图！</view>
         </view>
         <!-- 上传图片的路径写在paths中以逗号分割 -->
-        <input id='paths' type='text' class='hide' value='{{tempFilePaths}}'></input>
+        <input id='paths' name="drawing" type='text' class='hide' value='{{tempFilePaths}}'></input>
       </view>
       <view class='flex-wrp bewrite'>
         <text space="ensp">户型描述:</text>
-        <textarea placeholder="若您没有完整户型图，您可以在此详细描述您的户型，便于3D效果图的设计"></textarea>
+        <textarea name="describe" placeholder="若您没有完整户型图，您可以在此详细描述您的户型，便于3D效果图的设计"></textarea>
       </view>
     </view>
   </view>
@@ -58,11 +58,10 @@
   <view class='basic'>
     <view class='flex-wrp bewrite'>
         <text space="ensp" style='color:#f84056'>备注</text>
-        <textarea placeholder="填写您对设计的要求、想法、建议等"></textarea>
+        <textarea name="remarks" placeholder="填写您对设计的要求、想法、建议等"></textarea>
       </view>
   </view>
   </view>
-  <button class='sub_button'>确定</button>
-  
+  <button class='sub_button' form-type='submit'>确定</button>
 </view>
 </form>

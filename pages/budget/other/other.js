@@ -43,7 +43,8 @@ Page({
     total: 0,
     otherData:[],
     num:0,
-    dataNum:""
+    dataNum:"",
+    showModal1: false,
   },
   /**
    * 弹窗
@@ -85,7 +86,6 @@ Page({
   onConfirm: function() {
     if (this.data.num>0){
       this.data.otherData[this.data.index] = { name: this.data.modal[this.data.index].title, num: this.data.num, total: this.data.modal[this.data.index].univalent * this.data.num, unit: this.data.modal[this.data.index].unit}
-      console.log(this.data.otherData[this.data.index].total);
       //归零重算 以免多次修改重复计算
       this.data.total = 0;
       for (var index in this.data.otherData) {
@@ -111,7 +111,7 @@ Page({
       key: "other",
       data: this.data.otherData
     });
-    wx.navigateTo({
+    wx.reLaunch({
       url: "../offer/offer"
     })
   },
@@ -132,5 +132,44 @@ Page({
         });
       },
     });
-  }
+  },
+
+
+  /**
+     * 弹窗
+     */
+  showDialogBtn1: function (e) {
+    this.setData({
+      showModal1: true,
+    })
+    var that = this;
+    var query = wx.createSelectorQuery();
+    query.select('#Modal1').boundingClientRect(function (rect) {
+      that.setData({
+        blockHeight: rect.height *0.2
+      })
+    }).exec();
+  },
+  /**
+   * 隐藏模态对话框
+   */
+  hideModal1: function () {
+    this.setData({
+      showModal1: false,
+    });
+  },
+  /**
+   * 对话框取消按钮点击事件
+   */
+  onCancel1: function () {
+    this.hideModal1();
+  },
+  /**
+   * 对话框确认按钮点击事件
+   */
+  onConfirm1: function () {
+    this.hideModal1();
+  },
+
+
 })

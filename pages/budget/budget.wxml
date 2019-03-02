@@ -67,7 +67,7 @@
          <view>{{item.name}}</view>
       </view>
     </view>
-    <view class='flex-wrp'><button class='red_button'>查看十大装修风格</button> </view>
+    <view class='flex-wrp'><navigator url="../index/style/style" class='red_button'>查看十大装修风格</navigator> </view>
   </view>
   <!--end 选择风格 -->  
   <button class='sub_button' bindtap='submit'>确定</button>

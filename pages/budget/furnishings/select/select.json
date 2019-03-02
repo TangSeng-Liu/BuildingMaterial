@@ -1,1 +1,3 @@
-{"navigationBarTitleText": "选择家居"}
+{"navigationBarTitleText": "选择家居","usingComponents": {
+    "modal": "/pages/modal/modal"
+  }}

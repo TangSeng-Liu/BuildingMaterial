@@ -1,17 +1,33 @@
 <view class='container'>
   <view class='team'>
-   <view class='cont'>
-    <view class='title'>开放式厨房风水好不好 开放式厨 房风水禁忌</view>
-    <view class='flex'>
-      <view>原创: {{}}</view>
-      <view>原创: {{}}</view>
-      <view>评论</view>
-      <view>分享</view>
-    </view>
-    <view>风格表现部分，则以人们喜爱的北欧风为题，黑、灰、 白色系作为 基底用色，大量使用文化石材串联整体空 间视觉，并搭佐木质元素替代
-    风格表现部分，则以人们喜爱的北欧风为题，黑、灰、 白色系作为 基底用色，大量使用文化石材串联整体空 间视觉，并搭佐木质元素替代
-      <image src='/images/banner.jpg'></image>
+    <view class='cont'>
+      <view class='title'>开放式厨房风水好不好 开放式厨 房风水禁忌</view>
+      <view class='flex tag'>
+        <view>原创: {{tag.name}}</view>
+        <view class='num'>
+          <image src='/images/num-icon.svg' mode='widthFix'></image>{{tag.num}}</view>
+        <view class='button'>
+          <image src='/images/pl.svg' mode='widthFix'></image>
+          <view>评论</view>
+        </view>
+        <button open-type='share' class='button'>
+          <image src='/images/fx.svg' mode='widthFix'></image>
+          <view>分享</view>
+        </button>
+      </view>
+      <view>风格表现部分，则以人们喜爱的北欧风为题，黑、灰、 白色系作为 基底用色，大量使用文化石材串联整体空 间视觉，并搭佐木质元素替代 风格表现部分，则以人们喜爱的北欧风为题，黑、灰、 白色系作为 基底用色，大量使用文化石材串联整体空 间视觉，并搭佐木质元素替代
+        <image src='/images/banner.jpg'></image>
+      </view>
     </view>
   </view>
- </view>
- </view>
+</view>
+<view class='float_menu'>
+  <button bindtap='list'>
+  <image src='/images/gdzx.png' mode='aspectFit'></image>
+  <view>更多资讯</view>
+  </button>
+  <button open-type='share'>
+  <image src='/images/fx.png' mode='aspectFit'></image>
+  <view>分享给朋友</view>
+  </button>
+</view>

@@ -6,3 +6,8 @@
 .acreage button.active{background-color: #f84056;color: #fff}
 .case_bolck>view:nth-child(2){ font-size: .8rem; color: #252525}
 .case_bolck image{height: 210px; }
+.case>navigator{
+  animation-name: moveToTop; /*动画名称*/
+  animation-duration: 1s; /*动画持续时间*/
+  animation-delay: 0s; /*延迟时间*/
+}

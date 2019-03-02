@@ -1,6 +1,5 @@
 <!--pages/budget/sdOffer/sdOffer.wxml-->
-
-<view class="container">
+<view class="container {{showModal?'scroll_hidden':''}}">
 <!-- 基本信息 -->
   <view>
     <view class='detail_title'>请选择是否带回水</view>
@@ -32,3 +31,15 @@
     <view>共计：{{total}}元</view>
     <view class='but'><button class='sub_button' bindtap="setdata">确定</button></view>
   </view>
+<!--弹窗-->
+<!-- 弹窗按钮 -->
+<image src='/images/yx.png' class='yx' mode='widthFix' bindtap='showDialogBtn'></image>
+<!-- 弹窗内容 -->
+<view class="modal-mask {{showModal?'show':'hide'}}" bindtap="hideModal" catchtouchmove="preventTouchMove" ></view>
+<view class="modal-dialog {{showModal?'show':'hide'}}" style='margin-top:-{{blockHeight}}px'>
+  <view class="modal-title"><image src="/images/yxcl.svg" mode='widthFix'></image>已选材料</view>
+  <view class="modal-content">
+    <modal inner-text="offer"></modal>
+  </view>
+  <view class="btn-cancel" bindtap="onCancel" data-status="cancel"><image src='/images/cancel.png' mode='widthFix'></image></view>
+</view>

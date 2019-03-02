@@ -35,8 +35,8 @@
     </view>
     <swiper indicator-dots='true' indicator-color="rgb(229,228,228)" indicator-active-color="#f84056" style='height: 430rpx'>
       <swiper-item wx:for="{{choice_block}}" wx:key="key">
-        <navigator wx:for="{{item}}" wx:key="key" class='choice_block'>
-          <image src='{{item.url}}' mode='widthFix'></image>
+        <navigator url='{{item.url}}' wx:for="{{item}}" wx:key="key" class='choice_block'>
+          <image src='{{item.imgurl}}' mode='widthFix'></image>
           <view>{{item.name}}</view>
         </navigator>
       </swiper-item>
@@ -47,7 +47,10 @@
   <view class='team'>
     <view class='block_title flex-wrp'>
       <image src="/images/title-bg.png"></image>设计师 & 装修团队
-      <navigator url='../index/team/team' class='moer' open-type="navigate">更多></navigator>
+      <navigator url='../index/team/team' class='moer' open-type="navigate">
+        <view>更多</view>
+        <image src='/images/right-icon.svg' mode='widthFix'></image>
+      </navigator>
     </view>
     <!--设计师内容区-->
     <view class='team_block flex-wrp' wx:for="{{designer}}" wx:key="key">
@@ -81,10 +84,10 @@
         </view>
       </view>
       <view class='team_right'>
-        <navigator url="/pages/case/details/details" open-type="navigateTo">
+        <navigator url="/pages/case/details/details" open-type='navigate'>
         <image src="{{item.worksurl[0]}}" mode='widthFix'></image>
         </navigator>
-        <navigator url="/pages/case/details/details" open-type="navigateTo">
+        <navigator url="/pages/case/details/details" open-type='navigate'>
         <image src="{{item.worksurl[1]}}" mode='widthFix'></image>
         </navigator>
       </view>
@@ -95,9 +98,12 @@
   <view class='case'>
     <view class='block_title flex-wrp'>
       <image src="/images/title-bg.png"></image>装修案例
-      <navigator class='moer' open-type="switchTab" url="/pages/case/case">更多案例></navigator>
+      <navigator class='moer' open-type="switchTab" url="/pages/case/case">
+        <view>更多案例</view>
+        <image src='/images/right-icon.svg' mode='widthFix'></image>
+      </navigator>
     </view>
-    <navigator class='case_bolck flex-wrp col' wx:for="{{caseContent}}" wx:key="key" url="/pages/case/details/details" open-type="navigateTo">
+    <navigator class='case_bolck flex-wrp col' wx:for="{{caseContent}}" wx:key="key" url="/pages/case/details/details" open-type='navigate'>
       <view><image src='{{item.imageurl}}'></image></view>
       <view>{{item.name}}</view>
       <view>{{item.describe}}</view>
@@ -114,9 +120,12 @@
   <view class='lore'>
     <view class='block_title flex-wrp'>
       <image src="/images/title-bg.png"></image>装修知识
-      <navigator class='moer' url="/pages/index/lore/lore" open-type="navigate">更多知识></navigator>
+      <navigator class='moer' url="/pages/index/lore/lore" open-type="navigate">
+        <view>更多知识</view>
+        <image src='/images/right-icon.svg' mode='widthFix'></image>
+      </navigator>
     </view>
-    <navigator url="/pages/index/lore/details/details" wx:for="{{lore}}" wx:key="key" >
+    <navigator url="/pages/index/lore/details/details" wx:for="{{lore}}" wx:key="key" open-type='navigate'>
       <view class='lore_bolck flex' >
       <view><image src='{{item.imageurl}}' mode='scaleToFill'></image></view>
       <view class='lore_r flex-wrp'>
@@ -134,9 +143,12 @@
   <view class='case'>
     <view class='block_title flex-wrp'>
       <image src="/images/title-bg.png"></image>十大装修风格
-      <navigator url='/pages/index/style/style' class='moer'>更多风格></navigator>
+      <navigator url='/pages/index/style/style' class='moer' open-type='navigate'>
+        <view>更多风格</view>
+        <image src='/images/right-icon.svg' mode='widthFix'></image>
+      </navigator>
     </view>
-    <navigator url="../index/style/details/details" class='case_bolck flex-wrp col' wx:for="{{style}}" wx:key="key">
+    <navigator url="../index/style/details/details" class='case_bolck flex-wrp col' wx:for="{{style}}" wx:key="key" open-type='navigate'>
       <view><image src='{{item.imageurl}}'></image></view>
       <view>{{item.name}}</view>
       <view>{{item.describe}}</view>

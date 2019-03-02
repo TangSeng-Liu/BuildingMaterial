@@ -1,1 +1,3 @@
-{"navigationBarTitleText": "灰工"}
+{"navigationBarTitleText": "灰工","usingComponents": {
+    "modal": "/pages/modal/modal"
+  }}

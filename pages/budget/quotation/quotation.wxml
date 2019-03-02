@@ -1,5 +1,4 @@
 <view class="container">
-
   <view>
     <view class='detail_title'>基装报价单</view>
     <!--水电-->

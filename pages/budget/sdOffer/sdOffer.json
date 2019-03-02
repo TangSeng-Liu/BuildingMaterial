@@ -1,1 +1,6 @@
-{"navigationBarTitleText": "水电报价"}
+{
+  "navigationBarTitleText": "水电报价",
+  "usingComponents": {
+    "modal": "/pages/modal/modal"
+  }
+}

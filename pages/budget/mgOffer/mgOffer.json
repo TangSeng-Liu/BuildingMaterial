@@ -1,1 +1,3 @@
-{ "navigationBarTitleText": "木工(吊顶)"}
+{ "navigationBarTitleText": "木工(吊顶)","usingComponents": {
+    "modal": "/pages/modal/modal"
+  }}

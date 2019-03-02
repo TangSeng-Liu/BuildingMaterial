@@ -1,6 +1,6 @@
 <view class="container">
   <view class='case'>
-      <navigator url="../style/details/details" class='case_bolck flex-wrp col' wx:for="{{style}}" wx:key="key">
+      <navigator url="../style/details/details" class='case_bolck flex-wrp col' wx:for="{{style}}" wx:key="key" style='animation:moveToTop 0.5s ease {{index/3}}s 1 both;'>
         <view><image src='{{item.imageurl}}'></image></view>
         <view>{{item.name}}</view>
         <view>{{item.describe}}</view>

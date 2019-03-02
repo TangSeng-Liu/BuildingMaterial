@@ -14,10 +14,12 @@
   margin: 20rpx;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 5px rgba(225, 24, 48,.55);
+  animation:moveToTop 1s ease 0s 1 both;
 }
 
 .userinfo-nickname {
   color: #fff;
+  animation:moveToTop 0.5s ease 0.3s 1 both;
 }
 
 .usermotto {
@@ -31,12 +33,12 @@
   border-radius: 28px;
 
   }
-.login_button{ border:5px solid rgba(225, 24, 48,.55);width: 205rpx; line-height: 205rpx; 
+.login_button{ border:5px solid rgba(225, 24, 48,.55);width: 205rpx; line-height: 205rpx; animation:moveToTop 1s ease 0s 1 both;
 text-align: center; color: #f84056; background-color: #fff;
   height: 205rpx;
   margin: 20rpx;
   border-radius: 50%;}
- .cont{ position: absolute; top:-70rpx; width: 86%; left: 7%; background-color: #fff; border-radius: 25px; box-shadow: 0 0 10px #dedfe4; }
+ .cont{ position: absolute; top:-70rpx; width: 86%; left: 7%; background-color: #fff; border-radius: 25px; box-shadow: 0 0 10px #dedfe4;animation:moveToTop 0.5s ease 0.5s 1 both; }
  .cont>navigator{padding:40rpx 35rpx; margin: 25rpx 35rpx; justify-content:space-between; color: #797878;}
  .cont>navigator:first-child{ border-bottom:1px solid #e2e2e2;}
  .cont>navigator image{ width: 25px; height: 25px; margin-right: 20px;}

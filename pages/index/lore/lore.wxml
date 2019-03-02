@@ -1,6 +1,6 @@
 <view class="container">
   <view class='lore'>
-    <navigator url="../lore/details/details" wx:for="{{lore}}" wx:key="key" >
+    <navigator url="../lore/details/details" wx:for="{{lore}}" wx:key="key" style='animation:moveToTop 0.5s ease {{index/5}}s 1 both;'>
       <view class='lore_bolck flex' >
       <view><image src='{{item.imageurl}}' mode='scaleToFill'></image></view>
       <view class='lore_r flex-wrp'>

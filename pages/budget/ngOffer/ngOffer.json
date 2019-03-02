@@ -1,1 +1,3 @@
-{"navigationBarTitleText": "泥工报价"}
+{"navigationBarTitleText": "泥工报价","usingComponents": {
+    "modal": "/pages/modal/modal"
+  }}

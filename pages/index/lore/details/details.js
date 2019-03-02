@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tag:{name:"科码科技",num:120}
   },
 
   /**
@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  list:function(){
+    wx.navigateTo({
+      url: '/pages/index/lore/lore',
+    })
   }
 })

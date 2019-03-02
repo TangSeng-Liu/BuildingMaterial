@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container {{showModal?'scroll_hidden':''}}">
   <view class="scroll_box"> 
     <scroll-view class='typeName' scroll-x style="width: auto;overflow:hidden;">
       <view wx:for="{{typeName}}" wx:key="key" wx:for-index="index" data-num='{{index}}' class="{{_num==index?'active':''}}" bindtap="clClick">
@@ -7,7 +7,7 @@
   </view>
   <view>
     <view class='flex-wrp img_button'>
-      <navigator url='' wx:for="{{datum}}" wx:key="key">
+      <navigator url='' wx:for="{{datum}}" wx:key="key" style='animation:moveToTop 0.5s ease {{index/10}}s 1 both;'>
         <image src='{{item.imageurl}}' mode='widthFix'></image>
         <view>{{item.name}}</view>
         <view class='desc'>
@@ -19,4 +19,16 @@
       </navigator>
     </view>
   </view>
+</view>
+  <!--弹窗-->
+<!-- 弹窗按钮 -->
+<image src='/images/yx.png' class='yx' mode='widthFix' bindtap='showDialogBtn'></image>
+<!-- 弹窗内容 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" style='margin-top:-{{blockHeight}}px' wx:if="{{showModal}}" >
+  <view class="modal-title"><image src="/images/yxcl.svg" mode='widthFix'></image>已选材料</view>
+  <view class="modal-content" >
+    <modal inner-text="furnishings"></modal>
+  </view>
+  <view class="btn-cancel" bindtap="onCancel" data-status="cancel"><image src='/images/cancel.png' mode='widthFix'></image></view>
 </view>

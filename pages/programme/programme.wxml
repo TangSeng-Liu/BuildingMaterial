@@ -20,7 +20,7 @@
     </view>
   </view>
   <view class='case'>
-    <view class='case_bolck flex-wrp col' wx:for="{{caseContent}}" wx:key="key">
+    <view class='case_bolck flex-wrp col' wx:for="{{caseContent}}" wx:key="key" style='animation:moveToTop 1s ease {{index/2}}s 1 both;'>
       <view class='flex'>
         <image src='{{item.imageurl}}'></image>
         <view class='QRcode'>

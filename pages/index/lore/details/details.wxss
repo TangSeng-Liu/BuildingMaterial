@@ -15,3 +15,13 @@
 .team .flex{ justify-content: space-between}
 .title{ font-size: 1.2em; font-weight: bold; width: 70%;}
 .cont image{ margin: 25rpx 0}
+.tag{color: #bcbcbc; align-items: center;}
+.tag .num image{ width: 17px; margin:0 5px;}
+.tag .num{ display: flex; align-items: center; }
+.tag .button{ display: flex; align-items: center; color: #f84056; border: 1px solid #f84056; border-radius: 3px; padding:4px 8px; line-height: 1; font-size: .9em; margin: 0;}
+.tag .button image{ width: 18px; margin:0 7px 0 0;}
+.float_menu{ position: fixed; width: 100%; display: flex; align-items: center; bottom: 0;}
+.float_menu button{width: 50%; height: 45px;background-color:#f84056; color: #fff; display: flex; align-items: center; justify-content: center;
+border-radius: 0; border: 0;}
+.float_menu button:first-child{background-color:#ff9600}
+.float_menu button image{width: 28px; margin-right: 10px;}

@@ -1,2 +1,2 @@
-.container {background-color: #f0f0f0;} 
+.container {background-color: #f0f0f0;animation:moveToTop 1s ease 1s 1 both;} 
 .red_button{background-color:#f84056; color: #fff; font-size: 1em; margin: 25px auto; width: 80%}

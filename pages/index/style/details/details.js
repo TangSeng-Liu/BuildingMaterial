@@ -17,6 +17,7 @@ Page({
       supplier:"朗朗装饰有限公司",
       constructionTeam:"朗朗装饰有限公司施工团队",
     },
+    tag: { name: "科码科技", num: 120 }
   },
   /**
    * 用户点击右上角分享

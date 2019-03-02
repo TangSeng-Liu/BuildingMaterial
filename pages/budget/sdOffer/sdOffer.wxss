@@ -1,3 +1,3 @@
 /* pages/budget/sdOffer/sdOffer.wxss */
 .container{background-color: #f0f0f0; margin-bottom: 140rpx}
-
+.sel_button view{width: 250rpx}

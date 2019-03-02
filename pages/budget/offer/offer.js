@@ -99,5 +99,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  offer:function(){
+    wx.navigateTo({
+      url: "../quotation/quotation",
+    })
   }
 })

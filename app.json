@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/budget/quotation/quotation",
+    
     "pages/index/index",
     "pages/index/experience/experience",
     "pages/case/case",
@@ -23,8 +23,13 @@
     "pages/budget/furnishings/select/select",
     "pages/budget/offer/offer",
     "pages/index/lore/details/details",
+    "pages/budget/quotation/quotation",
+    "pages/my/myProgramme/myProgramme",
+    "pages/modal/modal",
+    "pages/index/experience/success",
+    "pages/index/team/enroll/success",
+    "pages/index/team/enroll/enroll"
     
-    "pages/my/myProgramme/myProgramme"
   ],
   "window": {
     "backgroundTextStyle": "333",
@@ -33,7 +38,7 @@
     "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
-    "color": "#000",
+    "color": "#727071",
     "selectedColor": "#f84056",
     "borderStyle": "black",
     "backgroundColor": "#fff",

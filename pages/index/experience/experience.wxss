@@ -1,5 +1,5 @@
 /* pages/index/experience/experience.wxss */
-.container {background-color: #f0f0f0;} 
+.container {background-color: #f0f0f0;animation:moveToTop 1s ease 0s 1 both;} 
 .detail_title{ text-align: center; font-size: 1em; padding: 20px; border: 1px solid #e1e1e1; color: #f84056}
 .container>view{background-color: #fff; margin-bottom: 25rpx}
 .container>view.detail_title{ margin-bottom: 0;}

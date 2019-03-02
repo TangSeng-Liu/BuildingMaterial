@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container ">
 <!-- 基本信息 -->
   <view>
     <form bindsubmit="formSubmit" bindreset="formReset">

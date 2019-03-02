@@ -1,1 +1,3 @@
-{"navigationBarTitleText": "材料选择"}
+{"navigationBarTitleText": "材料选择","usingComponents": {
+    "modal": "/pages/modal/modal"
+  }}
