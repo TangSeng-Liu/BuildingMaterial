@@ -1,0 +1,3 @@
+/* pages/budget/fsOffer/fsOffer.wxss */
+.basic .account{ width: 40%; font-size: .9em; margin-left: auto; color: #6e6e6e}
+.container{background-color: #f0f0f0; margin-bottom: 140rpx}

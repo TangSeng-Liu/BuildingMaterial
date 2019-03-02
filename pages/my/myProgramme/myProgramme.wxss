@@ -1,0 +1,17 @@
+
+.acreage{ justify-content:space-between;align-items:center; padding: 5px 50rpx; padding-bottom: 10px; margin-top: 10px; }
+.container>.acreage{margin-bottom: 0}
+.acreage button{ line-height: 2;}
+.acreage picker{border: 1px solid #f84056; border-radius: 5px; padding: 0px 0px 0px 10px;font-size: .8em;line-height: 2; justify-content: space-between;overflow: hidden;}
+.arrow{ background-color: #f84056;color: #fff; margin-left: 10px;border-radius: 4px;font-weight: bold;text-align: center; font-size: 1.5em; line-height: 1.4em; padding:0 15rpx}
+.acreage button.active{background-color: #f84056;color: #fff}
+.QRcode{ text-align: center;align-items: center; display: flex; flex-wrap: wrap; justify-content: center; border: 1px solid #e1e1e1}
+.QRcode>view{width: 180rpx;padding: 0 30rpx}
+.case_bolck .flex-wrp{ margin: 0;}
+.case_bolck .flex>image{height: 140px; }
+.case_bolck>view:first-child{ margin: 0; padding: 0 25rpx;}
+.case_bolck>view{padding: 0 25rpx; margin-top: 15px;}
+.case {
+margin-top:0;
+padding-top: 25rpx
+}

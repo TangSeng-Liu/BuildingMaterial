@@ -1,0 +1,6 @@
+.basic>.flex image{ width: 20px; margin-right: 10px}
+.select_button{ border: 1px solid #c8c8c8; border-radius: 5px; padding: 0 10px; color: #8f8f8f; margin-left: auto}
+.modify_button{ border: 1px solid #f84056; border-radius: 5px; padding: 0 10px; color: #f84056; margin-left: auto}
+.basic>view.flex{padding:16px 15px;}
+.basic .flex .input{ width: 50%;}
+.basic>.flex{ align-items:center}

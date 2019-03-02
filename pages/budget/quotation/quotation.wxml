@@ -1,0 +1,94 @@
+<view class="container">
+
+  <view>
+    <view class='detail_title'>基装报价单</view>
+    <!--水电-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>水电
+    </view>
+    <view class='content'>
+      <view>材料：（日丰管）电线：昆明电缆总厂</view>
+      <view>备注：含开关插座、地漏、龙头。</view>
+      <rich-text>价格：<b class="red">200元</b></rich-text>
+    </view>
+    <!--end 水电-->
+    <!--防水-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>防水
+    </view>
+    <view class='content'>
+      <view>材质：涂料</view>
+      <view>材料：丙伦</view>
+      <rich-text>价格：<b class="red">200元</b></rich-text>
+    </view>
+    <!--end 防水-->
+    <!--泥工-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>泥工
+    </view>
+    <view class='content'>
+      <view>工时费：100元  </view>
+      <view>铺料单价：100元/㎡</view>
+      <rich-text>总价：<b class="red">1000元</b></rich-text>
+    </view>
+    <!--end 泥工-->
+    <!--泥工-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>泥工
+    </view>
+    <view class='content'>
+      <view>工时费：100元  </view>
+      <view>铺料单价：100元/㎡</view>
+      <rich-text>总价：<b class="red">1000元</b></rich-text>
+    </view>
+    <!--end 泥工-->
+    <!--石膏板吊周边-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>石膏板吊周边
+    </view>
+    <view class='content'>
+      <view class='red'>吊顶位置：客厅周边顶、过道造型顶、客厅周边顶</view>
+      <view>工时费：100元  </view>
+      <view>铺料单价：100元/㎡</view>
+      <rich-text>总价：<b class="red">1000元</b></rich-text>
+    </view>
+    <!--end 石膏板吊周边-->
+    <!--灰工-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>灰工
+    </view>
+    <view class='content'>
+      <view class='red'>墙面批灰，墙乳胶漆</view>
+      <view>工时费：100元  </view>
+      <view>铺料单价：100元/㎡</view>
+      <rich-text>总价：<b class="red">1000元</b></rich-text>
+    </view>
+    <!--end 灰工-->
+    <!--其它-->
+    <view class='block_title flex'>
+      <image src="/images/title-bg.png"></image>其它
+    </view>
+    <view class='content'>
+      <view class='red'>墙体拆除</view>
+      <view>拆除面积：10㎡</view>
+      <view>工时费：100元</view>
+      <rich-text>总价：<b class="red">1000元</b></rich-text>
+    </view>
+    <!--end 其它-->
+  </view>
+  <view>
+    <view class='detail_title'>家居报价单</view>
+    <view class='content'>
+      <view class='flex' wx:for="{{furnishings}}" wx:key="key">
+        <view>{{item.name}}：{{item.num}}</view>
+        <view>单价：{{item.price}}</view>
+        <view>总计：{{item.total}}</view>
+      </view>
+      <view class='red rt'>总价：7000元</view>
+    </view>
+  </view>
+  <view>
+    <view class='detail_title'>装修报价</view>
+    <rich-text class='red_total'> 您的装修报价为：<b>75800</b>元</rich-text>
+  </view>
+</view>

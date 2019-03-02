@@ -1,0 +1,4 @@
+/* pages/budget/furnishings/select/select.wxss */
+.container{ margin-bottom: 120rpx}
+.img_button{justify-content:space-between; padding: 35rpx}
+.img_button>navigator{ text-align: center; border:1px solid #c9c9c9; margin-bottom: 45rpx; border-radius: 5px;padding:0; width: 47%; line-height: 1.5; padding-bottom: 15rpx}

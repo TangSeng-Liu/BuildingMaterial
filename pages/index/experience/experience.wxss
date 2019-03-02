@@ -1,0 +1,20 @@
+/* pages/index/experience/experience.wxss */
+.container {background-color: #f0f0f0;} 
+.detail_title{ text-align: center; font-size: 1em; padding: 20px; border: 1px solid #e1e1e1; color: #f84056}
+.container>view{background-color: #fff; margin-bottom: 25rpx}
+.container>view.detail_title{ margin-bottom: 0;}
+.basic{ font-size: .8em; line-height: 1.7; padding: 0 25rpx}
+.basic input{width: 100%; line-height: .8em}
+.basic>view{ margin: 6px 0;padding:6px 15px; border-bottom: 1px solid #e1e1e1;}
+.basic>.flex-wrp>.input{width: 70%;}
+.basic>.flex-wrp>text {width: 20%; text-align: justify; padding-right: 15px}
+.kuai>view{ border: 1px solid #df4b5d; padding: 2px 25rpx; color:#df4b5d; margin-right:10px; font-size: .8em; border-radius: 2px; margin-bottom: 5px}
+.imgupdate image{ margin-right: 8px; width: 75px; height: 75px; margin-bottom: 8px}
+.imgupdate .tips{width:65%; font-size: .9em; color: #f84056}
+.bewrite textarea{ border: 1px solid #e1e1e1; border-radius: 5px; margin-top: 10px; padding: 15px; width: 100%; height: 45px; margin-bottom: 25rpx;}
+.select_style {width: 25%; margin: 3%; text-align: center}
+.sub_button{background-color:#f84056; color: #fff;border-radius:0 }
+.select_bolck{justify-content:space-between; padding:0 3%}
+.red_button{background-color:#f84056; color: #fff; font-size: 1em; margin: 25px auto; width: 80%}
+
+

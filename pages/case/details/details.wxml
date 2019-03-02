@@ -1,0 +1,35 @@
+<view class='container'>
+  <view class='team'>
+    <!--设计师内容区-->
+    <view class='team_block flex-wrp'>
+      <view class='team_left col'>
+        <navigator>
+          <image src="{{designer.headurl}}" mode='widthFix'></image>
+        </navigator>
+        <view class='introduce'>
+          <view>设计师</view>
+          <view>{{designer.name}}</view>
+        </view>
+      </view>
+      <view class='team_right'>
+        <view>理念:{{designer.introduce}}</view>
+        <view>风格:{{designer.style}}</view>
+        <view class='flex'>
+          <rich-text><b>{{designer.experience}}</b>年工作经验</rich-text>
+          <rich-text>作品数量<b>{{designer.works}}</b>个</rich-text>
+        </view>
+        <view>
+          <view>装修公司 : {{designer.dec}}</view>
+          <view>材料供应商 : {{designer.supplier}}</view>
+          <view>施工团队 : {{designer.constructionTeam}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class='detail_title'>装修完工图</view>
+    <view class='worksimg'>
+      <image wx:for="{{designer.worksurl}}" wx:key="key" src='{{item}}'></image>
+    </view>
+  </view>
+ </view>

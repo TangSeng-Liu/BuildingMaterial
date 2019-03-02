@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='lore'>
+    <navigator url="../lore/details/details" wx:for="{{lore}}" wx:key="key" >
+      <view class='lore_bolck flex' >
+      <view><image src='{{item.imageurl}}' mode='scaleToFill'></image></view>
+      <view class='lore_r flex-wrp'>
+        <view>{{item.name}}</view>
+        <view class='flex-wrp'>
+          <view>{{item.time}}</view>
+          <view class='num_icon'><image src='/images/num-icon.png' style='width:15px' mode='widthFix'></image>{{item.num}}</view>
+        </view>
+      </view>
+      </view>
+    </navigator>
+  </view>
+</view>

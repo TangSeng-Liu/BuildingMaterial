@@ -1,0 +1,77 @@
+<view class="container">
+<!-- 基本信息 -->
+  <view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='basic'>
+    <view class='flex'>
+        <image src='/images/home-cz.svg' mode='widthFix'></image>
+        <text space="ensp">瓷砖      </text>
+        <view class='input'>
+          <input name="hydropower" value='{{hydropower}}' type='text' disabled="true" placeholder="请选择材料"></input>
+        </view>
+        <navigator url="/pages/budget/furnishings/select/select" open-type='navigate' class='{{hydropower==null?"select_button":"modify_button"}}'>
+        {{hydropower==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-dd.svg' mode='widthFix'></image>
+        <text space="ensp">吊顶      </text>
+        <view class='input'>
+          <input name="waterproof" type='text' value='{{waterproof}}' disabled="true" placeholder="请选择材料"></input>
+        </view>
+        <navigator url="/pages/budget/furnishings/select/select" open-type='navigate' class='{{waterproof==null?"select_button":"modify_button"}}'>
+        {{waterproof==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-qtzs.svg' mode='widthFix'></image>
+        <text space="ensp">墙体装饰  </text>
+        <view class='input'><input name="mason" type='text' value='{{mason}}' disabled="true" placeholder="请选择材料"></input></view>
+        <navigator url="/pages/budget/furnishings/select/select" open-type='navigate' class='{{mason==null?"select_button":"modify_button"}}'>
+        {{mason==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-mc.svg' mode='widthFix'></image>
+        <text space="ensp">门窗      </text>
+        <view class='input'><input name="carpentry" type='text' value='{{carpentry}}' disabled="true" placeholder="请选择材料"></input></view>
+        <navigator url="/pages/budget/furnishings/select/select" open-type='navigate' class='{{carpentry==null?"select_button":"modify_button"}}'>
+        {{carpentry==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-dzgz.svg' mode='widthFix'></image>
+        <text space="ensp">定制柜子  </text>
+        <view class='input'><input name="plastering" type='text' value='{{plastering}}' disabled="true" placeholder="请选择材料"></input></view>
+        <navigator url="/pages/budget/furnishings/select/select" class='{{plastering==null?"select_button":"modify_button"}}'>
+        {{plastering==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-wy.svg' mode='widthFix'></image>
+        <text space="ensp">卫浴      </text>
+        <text class='input'>{{other==null?"请选择其他":other}}</text>
+        <navigator url="/pages/budget/furnishings/select/select" class='{{other==null?"select_button":"modify_button"}}'>
+        {{other==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-rsq.svg' mode='widthFix'></image>
+        <text space="ensp">热水器    </text>
+        <text class='input'>{{home==null?"请选择家居":home}}</text>
+        <navigator url="/pages/budget/furnishings/select/select" class='{{home==null?"select_button":"modify_button"}}'>{{home==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-dj.svg' mode='widthFix'></image>
+        <text space="ensp">灯具      </text>
+        <text class='input'>{{other==null?"请选择其他":other}}</text>
+        <navigator url="/pages/budget/furnishings/select/select" class='{{other==null?"select_button":"modify_button"}}'>
+        {{other==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/home-cl.svg' mode='widthFix'></image>
+        <text space="ensp">窗帘      </text>
+        <text class='input'>{{other==null?"请选择其他":other}}</text>
+        <navigator url="/pages/budget/furnishings/select/select" class='{{other==null?"select_button":"modify_button"}}'>
+        {{other==null?"选择":"修改"}}</navigator>
+      </view>
+    </view>
+    </form>
+  </view>
+  <!--end 基本信息 -->
+  <button class='sub_button'>得出家居报价单</button>
+</view>

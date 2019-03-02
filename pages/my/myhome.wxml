@@ -1,0 +1,23 @@
+<view class="container">
+  <view>
+  <view class="userinfo">
+    <button class='login_button' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button> 
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> 
+    </block>
+    <text class="userinfo-nickname">{{userInfo.nickName==null?"请先登录":userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <view class='cont'>
+      <navigator url="../budget/budget" open-type='switchTab' class='flex'>
+        <view class='flex'><image src='/images/my-bj.svg'></image>我的报价</view>
+        <view>＞</view>
+      </navigator>
+      <navigator url="/pages/my/myProgramme/myProgramme" class='flex'>
+        <view class='flex'><image src='/images/my-fa.svg'></image>我的方案</view>
+        <view>＞</view>
+      </navigator>
+    </view>
+  </view>
+  </view>
+</view>

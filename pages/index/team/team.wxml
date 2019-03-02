@@ -1,0 +1,74 @@
+<view class="container">
+<view class='flex switch_button'>
+  <view data-index='0' class='{{active==0?"active":""}}' bindtap='tabchange'>设计师</view>
+  <view data-index='1' class='{{active==1?"active":""}}' bindtap='tabchange'>装修团队</view>
+</view>
+
+<!--设计师 & 装修团队-->
+    <swiper current="{{current}}" bindchange="bindchange" style='height:{{blockHeight}}px'>
+      <swiper-item>
+      
+      <view class='team team0'>
+      <view class='trip'>
+        <view>
+          <view class='title'>设计师培训报名</view>
+          <view>本平台提供装修设计师的培训，点击本模块进入报名，成为 一名专业的房屋装修设计师，我们在这里等你。</view>
+        </view>
+      </view>
+        <!--设计师内容区-->
+          <view class='team_block flex-wrp' wx:for="{{designer}}" wx:key="key">
+            <view class='team_left col'>
+              <view>
+                <image src="{{item.headurl}}" mode='widthFix'></image>
+              </view>
+              <view class='introduce'>
+                <view>{{item.name}}</view>
+                <view>{{item.introduce}}</view>
+                <rich-text>
+                  <b>{{item.experience}}</b>年工作经验</rich-text>
+              </view>
+            </view>
+            <view class='team_right'>
+              <navigator url="/pages/case/details/details" open-type="navigate"><image src="{{item.worksurl[0]}}" mode='widthFix'></image></navigator>
+              <navigator url="/pages/case/details/details" open-type="navigate"><image src="{{item.worksurl[1]}}" mode='widthFix'></image></navigator>
+            </view>
+          </view>
+          <button class='sub_button'>成为平台设计师</button>
+          </view>
+      </swiper-item>
+      <swiper-item>
+      <view class='team team1'>
+      <view class='trip'>
+        <view>
+            <view class='title'>装修师培训报名</view>
+            <view>本平台提供装修设计师的培训，点击本模块进入报名，成为 一名专业的房屋装修设计师，我们在这里等你。</view>
+          </view>
+        </view>
+        <!--装修队内容区-->
+        <view class='team_block flex-wrp' wx:for="{{workman}}" wx:key="key">
+          <view class='team_left col'>
+            <view>
+              <image src="{{item.headurl}}" mode='widthFix'></image>
+            </view>
+            <view class='introduce'>
+              <view>{{item.name}}</view>
+              <view>{{item.introduce}}</view>
+              <rich-text>
+                <b>{{item.experience}}</b>年工作经验</rich-text>
+            </view>
+          </view>
+          <view class='team_right'>
+            <navigator url="/pages/case/details/details" open-type="navigateTo">
+            <image src="{{item.worksurl[0]}}" mode='widthFix'></image>
+            </navigator>
+            <navigator url="/pages/case/details/details" open-type="navigateTo">
+            <image src="{{item.worksurl[1]}}" mode='widthFix'></image>
+            </navigator>
+          </view>
+        </view>
+        <button class='sub_button'>成为平台设计师</button>
+        </view>
+      </swiper-item>
+    </swiper>   
+  <!--end 设计师 & 装修团队-->
+   </view>

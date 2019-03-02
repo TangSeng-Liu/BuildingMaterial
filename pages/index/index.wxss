@@ -1,0 +1,107 @@
+/**index.wxss**/
+.container {background-color: #f0f0f0;} 
+.banner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.banner>swiper {
+  width: 100%;
+}
+
+.container>.experience {
+  background-color:#f0f0f0;
+}
+
+.experience .exp_plate:first-child .title {
+  color: #7e86fc;
+}
+
+.experience .exp_plate .title {
+  color: #ff6100;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.experience .exp_plate {
+  width: 36%;
+  margin-left: 3.3%;
+  padding: 35rpx;
+  background-color: #fff;
+  border-radius: 5%;
+}
+
+.experience image {
+  width: 65%;
+}
+
+.experience .exp_plate .text {
+  font-size: 0.6em;
+  color: #535353;
+  height: 45px;
+}
+
+.exp_icon {
+  text-align: center;
+  margin: 25rpx 0;
+}
+
+.experience .exp_plate navigator {
+  color: #ff6100;
+  border: 2px solid #ff6100;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #feeede;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 3px;
+  width: 60%;
+  margin: 10% 15% 0 15%;
+}
+
+.experience .exp_plate:first-child navigator {
+  color: #7e86fc;
+  background-color: #f1f2ff;
+  border: 2px solid #7e86fc;
+}
+
+
+
+.choice {
+  background-color: #fff;
+  margin-top: 25rpx;
+  max-width: 100%;
+}
+
+.choice_block {
+  width: 17%;
+  text-align: center;
+  padding: 2% 4%;
+  font-size: 0.8em;
+  color: #686868;
+  float: left;
+}
+
+.choice_block image {
+  width: 90%;
+}
+
+.moer {
+  margin-left: auto;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+.introduce view:nth-child(2) {
+  color: #737373;
+  font-size: 0.6em;
+  margin: 8px 0;
+}
+.case_bolck>view:nth-child(2) {
+font-size:.8rem;
+color:#252525;
+
+}

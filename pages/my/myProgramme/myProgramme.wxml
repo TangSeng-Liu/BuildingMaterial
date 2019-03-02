@@ -1,0 +1,20 @@
+<view class="container">
+  <view class='case'>
+    <view class='case_bolck flex-wrp col' wx:for="{{caseContent}}" wx:key="key">
+      <view class='flex'>
+        <image src='{{item.imageurl}}'></image>
+        <view class='QRcode'>
+          <view>
+          <image src='{{item.QRcodeurl}}' mode='widthFix' data-src='{{item.QRcodeurl}}' bindtap='previewImg'></image>体验二维码
+          </view>
+        </view>
+      </view>
+      <view class='flex row'>
+        <view>设计师：{{item.designer}}</view>
+        <view>面积：{{item.acreage}}㎡</view>
+        <view>造价：{{item.cost}}万元</view>
+        <view>{{item.region}}</view>
+      </view>
+    </view>
+  </view>
+</view>

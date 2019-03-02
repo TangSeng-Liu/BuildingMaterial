@@ -1,0 +1,35 @@
+<view class="container">
+  <view class='flex acreage'>
+    <view><button class='active'>全部</button></view>
+    <!-- 风格选择 -->
+    <view>
+    <picker bindchange="styleChange" value="{{styleIndex}}" range="{{style}}">
+      <view class="picker flex">{{style[styleIndex]}}
+       <view class='arrow'>∨</view>  
+     </view>
+    </picker>
+    </view>
+    <!-- 格局选择 -->
+    <view>
+    <picker bindchange="roomChange" value="{{roomIndex}}" range="{{room}}">
+      <view class="picker flex">
+        <view>{{room[roomIndex]}}</view>  
+        <view class='arrow'>∨</view>  
+      </view>
+    </picker>
+    </view>
+  </view>
+  <view class='case'>
+    <navigator class='case_bolck flex-wrp col' wx:for="{{caseContent}}" wx:key="key" url='/pages/case/details/details'>
+      <view><image src='{{item.imageurl}}'></image></view>
+      <view>{{item.name}}</view>
+      <view>{{item.describe}}</view>
+      <view class='flex-wrp row'>
+        <view>设计师：{{item.designer}}</view>
+        <view>面积：{{item.acreage}}㎡</view>
+        <view>造价：{{item.cost}}万元</view>
+        <view>{{item.region}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>

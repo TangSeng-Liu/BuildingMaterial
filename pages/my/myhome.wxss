@@ -1,0 +1,45 @@
+/* pages/my/myhome.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f84056;
+   height: 500rpx;
+}
+
+.userinfo-avatar {
+  border:1px solid #fff;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px rgba(225, 24, 48,.55);
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.usermotto {
+  margin-top: 200px;
+  position: absolute;
+  top:50rpx;
+  left: -3%;
+  width: 106%;
+  background-color: #fff;
+  height: 500rpx;
+  border-radius: 28px;
+
+  }
+.login_button{ border:5px solid rgba(225, 24, 48,.55);width: 205rpx; line-height: 205rpx; 
+text-align: center; color: #f84056; background-color: #fff;
+  height: 205rpx;
+  margin: 20rpx;
+  border-radius: 50%;}
+ .cont{ position: absolute; top:-70rpx; width: 86%; left: 7%; background-color: #fff; border-radius: 25px; box-shadow: 0 0 10px #dedfe4; }
+ .cont>navigator{padding:40rpx 35rpx; margin: 25rpx 35rpx; justify-content:space-between; color: #797878;}
+ .cont>navigator:first-child{ border-bottom:1px solid #e2e2e2;}
+ .cont>navigator image{ width: 25px; height: 25px; margin-right: 20px;}
+.cont>navigator .flex{align-items: center;}
+
+

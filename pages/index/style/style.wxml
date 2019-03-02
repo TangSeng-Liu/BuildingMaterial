@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='case'>
+      <navigator url="../style/details/details" class='case_bolck flex-wrp col' wx:for="{{style}}" wx:key="key">
+        <view><image src='{{item.imageurl}}'></image></view>
+        <view>{{item.name}}</view>
+        <view>{{item.describe}}</view>
+        <view class='flex-wrp row'>
+          <view>{{item.time}}</view>
+          <view class='num_icon'><image src='/images/num-icon.png' style='width:15px' mode='widthFix'></image>{{item.num}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>

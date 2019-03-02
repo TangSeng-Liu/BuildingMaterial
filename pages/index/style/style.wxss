@@ -1,0 +1,9 @@
+/* pages/index/style/style.wxss */
+.case_bolck>view:nth-child(2) {
+font-size:.8rem;
+color:#252525;
+}
+.case {
+margin-top:0;
+
+}

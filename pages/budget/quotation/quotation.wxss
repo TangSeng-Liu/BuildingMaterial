@@ -1,0 +1,9 @@
+/* pages/budget/quotation/quotation.wxss */
+.content{ padding:0 4.5% 35rpx 4.5%; border-bottom: 1px solid #eaeaea; color: #6e6e6e; font-size: .9em; line-height: 1.8}
+.content view.red{ font-weight: normal;}
+.container{background-color: #f0f0f0}
+.content .flex{ justify-content: space-between; border-bottom: 1px solid #eaeaea}
+.content .flex view{ padding: 10rpx 20rpx }
+.rt{ text-align: right; margin-top: 35rpx}
+.red_total{ color: #f84056; text-align: center;padding: 35rpx}
+.red_total b{ font-weight: bold; }

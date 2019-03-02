@@ -1,0 +1,5 @@
+
+.basic .account{font-size: .9em; margin-right: auto; color: #6e6e6e}
+.container{background-color: #f0f0f0; margin-bottom: 140rpx}
+.basic>.flex>view:first-child{ width: 230rpx}
+.basic .account:last-child{margin-left: auto;margin-right: 0;}

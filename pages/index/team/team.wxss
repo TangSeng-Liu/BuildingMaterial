@@ -1,0 +1,18 @@
+.introduce view:nth-child(2) {
+color:#737373;
+font-size:0.6em;
+margin:8px 0;
+
+}
+.container .team { margin-bottom: 0;}
+.container{background-color: #fff;}
+.switch_button{ justify-content: center;padding-top:35rpx;}
+.switch_button view{ border: 1px solid #f84056; padding: 5px 15px; color:#f84056; width:150rpx; text-align: center}
+.switch_button view:first-child{ border-radius: 25px 0 0 25px}
+.switch_button view:last-child{ border-radius:0 25px 25px 0}
+.switch_button .active{ background-color:#f84056; color: #fff }
+.trip{padding:0 25rpx; margin-bottom: 25rpx;}
+.trip>view{border-top: 1px solid #edeee9;background-color: #f6f6f1; padding: 15px 20px; font-size: .8em;
+border-left: 3px solid #f84056;border-right: 3px solid #f84056;
+border-bottom: 1px solid #edeee9;}
+.trip>view .title{ text-align: center; color: #f84056; font-size: 1.3em; margin-bottom: 15px;}

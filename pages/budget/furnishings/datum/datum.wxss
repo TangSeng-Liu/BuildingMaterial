@@ -1,0 +1,15 @@
+.container{ margin-bottom: 120rpx}
+.img_button{justify-content:space-between; padding: 35rpx}
+.img_button>navigator{ border:1px solid #c9c9c9; margin-bottom: 45rpx;padding:15rpx; width: 43%; line-height: 1.5; padding-bottom: 15rpx}
+.desc{ font-size: .6em; color: #737373}
+.red{ font-size: .8em}
+.typeName view{ text-align: center;display: inline-block;border-bottom: 3px solid #eeeeee; padding: 0 10px}
+.scroll_box{
+width: 100%;
+padding:0 20rpx;
+line-height: 2.5;
+background: #fff;
+white-space: nowrap;
+
+}
+.typeName view.active{ color: #f84056; border-bottom:3px solid #f84056; margin-bottom: -3px}

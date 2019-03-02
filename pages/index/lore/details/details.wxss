@@ -1,0 +1,17 @@
+
+.container {background-color: #f0f0f0;} 
+.introduce view:nth-child(1) {color: #737373;font-size: 0.8em;}
+.team_block .team_right{font-size:.8em;width: 64%;}
+.team_block .team_right rich-text b{color:#f84056}
+.team_block .team_right>view:last-child{ color: #737373}
+.team_block .team_right>view{ margin: 10px 0;}
+.team_left{ padding-top: 15px;}
+.team_block .team_right .flex{justify-content: space-between;}
+.worksimg{padding: 10px; padding-top: 15px;}
+.worksimg image{ margin:10px 0; display: block;}
+.team{ margin-top: 0; }
+.team>.cont{padding: 25rpx; font-size: .8em}
+.team>.cont>view{ margin-bottom:15px}
+.team .flex{ justify-content: space-between}
+.title{ font-size: 1.2em; font-weight: bold; width: 70%;}
+.cont image{ margin: 25rpx 0}

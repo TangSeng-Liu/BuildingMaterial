@@ -1,0 +1,63 @@
+<view class="container">
+<!-- 基本信息 -->
+  <view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='basic'>
+    <view class='flex'>
+        <image src='/images/icon-sd.png' mode='widthFix'></image>
+        <text space="ensp">水电施工  </text>
+        <view class='input'>
+          <input name="hydropower" value='{{hydropower}}' type='text' disabled="true" placeholder="请选择材料"></input>
+        </view>
+        <navigator url="../sdOffer/sdOffer" open-type='navigate' class='{{hydropower==null?"select_button":"modify_button"}}'>
+        {{hydropower==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/icon-fs.png' mode='widthFix'></image>
+        <text space="ensp">防水施工  </text>
+        <view class='input'>
+          <input name="waterproof" type='text' value='{{waterproof}}' disabled="true" placeholder="请选择材料"></input>
+        </view>
+        <navigator url="../fsOffer/fsOffer" open-type='navigate' class='{{waterproof==null?"select_button":"modify_button"}}'>
+        {{waterproof==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/icon-ng.png' mode='widthFix'></image>
+        <text space="ensp">泥工施工  </text>
+        <view class='input'><input name="mason" type='text' value='{{mason}}' disabled="true" placeholder="请选择材料"></input></view>
+        <navigator url="../ngOffer/ngOffer" open-type='navigate' class='{{mason==null?"select_button":"modify_button"}}'>
+        {{mason==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/icon-mg.png' mode='widthFix'></image>
+        <text space="ensp">木工施工  </text>
+        <view class='input'><input name="carpentry" type='text' value='{{carpentry}}' disabled="true" placeholder="请选择材料"></input></view>
+        <navigator url="../mgOffer/mgOffer" open-type='navigate' class='{{carpentry==null?"select_button":"modify_button"}}'>
+        {{carpentry==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/icon-hg.png' mode='widthFix'></image>
+        <text space="ensp">灰工施工  </text>
+        <view class='input'><input name="plastering" type='text' value='{{plastering}}' disabled="true" placeholder="请选择材料"></input></view>
+        <navigator url="../hgOffer/hgOffer" class='{{plastering==null?"select_button":"modify_button"}}'>
+        {{plastering==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/icon-qt.png' mode='widthFix'></image>
+        <text space="ensp">其它      </text>
+        <text class='input'>{{other==null?"请选择其他":other}}</text>
+        <navigator url="../other/other" class='{{other==null?"select_button":"modify_button"}}'>
+        {{other==null?"选择":"修改"}}</navigator>
+      </view>
+      <view class='flex'>
+        <image src='/images/icon-ju.png' mode='widthFix'></image>
+        <text space="ensp">家居      </text>
+        <text class='input'>{{home==null?"请选择家居":home}}</text>
+        <navigator url="../furnishings/furnishings" class='{{home==null?"select_button":"modify_button"}}'>{{home==null?"选择":"修改"}}</navigator>
+      </view>
+    </view>
+    </form>
+  </view>
+  <!--end 基本信息 -->
+  <button class='sub_button'>得出基础报价单</button>
+</view>

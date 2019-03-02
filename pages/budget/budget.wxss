@@ -1,0 +1,2 @@
+.container {background-color: #f0f0f0;} 
+.red_button{background-color:#f84056; color: #fff; font-size: 1em; margin: 25px auto; width: 80%}

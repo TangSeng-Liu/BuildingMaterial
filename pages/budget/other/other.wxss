@@ -1,0 +1,29 @@
+/* pages/budget/other/other.wxss */
+.other_style>view{ width: 44%; margin:40rpx 0 0 3.7% ; border-radius: 6px; text-align: center; font-weight: bold; padding:25rpx 0}
+.other_style>view:nth-child(1){border: 1px solid #ff7622; background-color: #fffcfa; color: #ff6100}
+.other_style>view:nth-child(2){border: 1px solid #8f96fc; background-color: #fbfbff; color: #7e86fc}
+.other_style>view:nth-child(3){border: 1px solid #a1c443; background-color: #fdfefb; color: #93bb26}
+.other_style>view:nth-child(4){border: 1px solid #f9596d; background-color: #fefbfb; color: #f84056}
+.describe{ color: #535353; font-size: .8em;font-weight:normal; text-align: left;}
+.other_style>view view{ padding:10rpx 30rpx}
+.other_style>view image{width: 50%;}
+.container .other_style{ margin-bottom: 160rpx}
+
+.input {
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 12rpx;
+  padding: 0 20rpx;
+  color: #333;
+  border: 1px solid #bebebe;
+  border-radius: 3px; 
+  margin-right: 5px;
+}
+.total_icon{width:140rpx; margin: -40rpx 25rpx 0 25rpx;}
+.total{ position: fixed;bottom: 0; left: 0; height: 100rpx; background-color: #ff6275; width: 100%; color: #fff;line-height: 100rpx}
+.total .sub_button{ height: 100rpx; line-height: 100rpx; border:0; border-radius:0;}
+.but{ margin-left: auto;width: 45%}
+.modal-dialog .red_button{ width: 40%; margin: auto}
+.modal-dialog input{ width: 200rpx}
+.describe{ font-size: .8em}
+.modal-content .flex{font-size: .8em; margin-top: 25rpx; line-height: 1.8}

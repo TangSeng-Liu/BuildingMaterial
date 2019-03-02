@@ -1,0 +1,31 @@
+<!--pages/budget/sdOffer/sdOffer.wxml-->
+
+<view class="container">
+  <view>
+    <view class='detail_title'>选择铺砖方式</view>
+    <view class='flex sel_button img_button'>
+      <view wx:for="{{ng}}" wx:key="key" wx:for-index="index" data-num='{{index}}' class="{{ng_num==index?'active':''}}" bindtap="clClick">
+        <image src='{{item.imageurl}}' mode='widthFix'></image>
+        <image class="gx {{ng_num==index?'show':'hide'}}" mode='widthFix' src='/images/bolck-gx.png'></image>
+        <view>{{item.name}}</view>
+        <view class='account'>单价+施工：{{item.price}}元/㎡</view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class='detail_title'>防水区域及介绍</view>
+    <view class='basic'>
+      <view class=' flex' wx:for="{{sg}}" wx:key="key">
+        <view>{{item.name}} : </view>
+        <view class='account'>{{item.region}}</view>
+        <view class='account'>{{item.costDesc}}:{{item.price}}元</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 底部信息及按钮 -->
+  <view class='flex total'>
+    <view><image class='total_icon' src='/images/total.png' mode='widthFix'></image></view>
+    <view>共计：{{total}}元</view>
+    <view class='but'><button class='sub_button' bindtap="setdata">确定</button></view>
+  </view>

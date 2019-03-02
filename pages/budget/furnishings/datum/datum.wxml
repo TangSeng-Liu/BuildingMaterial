@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="scroll_box"> 
+    <scroll-view class='typeName' scroll-x style="width: auto;overflow:hidden;">
+      <view wx:for="{{typeName}}" wx:key="key" wx:for-index="index" data-num='{{index}}' class="{{_num==index?'active':''}}" bindtap="clClick">
+      {{item}}</view>
+    </scroll-view>
+  </view>
+  <view>
+    <view class='flex-wrp img_button'>
+      <navigator url='' wx:for="{{datum}}" wx:key="key">
+        <image src='{{item.imageurl}}' mode='widthFix'></image>
+        <view>{{item.name}}</view>
+        <view class='desc'>
+          <view>类型：{{item.typeData}}</view>
+          <view>尺寸：{{item.sizeData}}</view>
+          <view>场景：{{item.sceneData}}</view>
+        </view>
+        <view class='red'>¥{{item.price}}元</view>
+      </navigator>
+    </view>
+  </view>
+</view>

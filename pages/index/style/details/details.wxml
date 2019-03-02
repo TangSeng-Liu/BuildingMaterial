@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='team'>
+  <view class='detail_title'>基本信息</view>
+   <view class='cont'>
+    <view class='flex'>
+      <view>原创: {{}}</view>
+      <view>原创: {{}}</view>
+      <view>评论</view>
+      <view>分享</view>
+    </view>
+    <view>风格表现部分，则以人们喜爱的北欧风为题，黑、灰、 白色系作为 基底用色，大量使用文化石材串联整体空 间视觉，并搭佐木质元素替代
+    风格表现部分，则以人们喜爱的北欧风为题，黑、灰、 白色系作为 基底用色，大量使用文化石材串联整体空 间视觉，并搭佐木质元素替代</view>
+  </view>
+  
+ </view>
+ <view>
+    <view class='detail_title'>中式风格图片</view>
+    <view class='worksimg'>
+      <image wx:for="{{designer.worksurl}}" wx:key="key" src='{{item}}'></image>
+    </view>
+  </view>
+ </view>

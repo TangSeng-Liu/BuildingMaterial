@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/budget/quotation/quotation",
+    "pages/index/index",
+    "pages/index/experience/experience",
+    "pages/case/case",
+    "pages/case/details/details",
+    "pages/budget/sdOffer/sdOffer",
+    "pages/budget/fsOffer/fsOffer",
+    "pages/budget/ngOffer/ngOffer",
+    "pages/budget/mgOffer/mgOffer",
+    "pages/budget/hgOffer/hgOffer",
+    "pages/budget/budget",
+    "pages/index/lore/lore",
+    "pages/programme/programme",
+    "pages/index/style/style",
+    "pages/index/style/details/details",
+    "pages/index/team/team",
+    "pages/budget/other/other",
+    "pages/my/myhome",
+    "pages/budget/furnishings/datum/datum",
+    "pages/budget/furnishings/furnishings",
+    "pages/budget/furnishings/select/select",
+    "pages/budget/offer/offer",
+    "pages/index/lore/details/details",
+    
+    "pages/my/myProgramme/myProgramme"
+  ],
+  "window": {
+    "backgroundTextStyle": "333",
+    "navigationBarBackgroundColor": "#f84056",
+    "navigationBarTitleText": "建材家居",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f84056",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-select.png"
+      },
+      {
+        "pagePath": "pages/case/case",
+        "text": "案例",
+        "iconPath": "images/anli.png",
+        "selectedIconPath": "images/anli-select.png"
+      },
+      {
+        "pagePath": "pages/budget/budget",
+        "text": "做预算",
+        "iconPath": "images/yusuan.png",
+        "selectedIconPath": "images/yusuan-select.png"
+      },
+      {
+        "pagePath": "pages/programme/programme",
+        "text": "方案",
+        "iconPath": "images/fangan.png",
+        "selectedIconPath": "images/fangan-select.png"
+      },
+      {
+        "pagePath": "pages/my/myhome",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode-select.png"
+      }
+    ]
+  }
+}
